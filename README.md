@@ -11,6 +11,7 @@ We welcome pull requests that add verified, credible information about the ident
 - Include clear references from trusted sources (such as academic articles, reputable news outlets, or books).
 - Focus on verified facts, not speculation.
 - Provide context when introducing new suspects or theories.
+- Use the placeholder variables `__FULLNAME__` or `__NAME__`
 
 ## How to Contribute
 
