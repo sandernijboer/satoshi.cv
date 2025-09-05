@@ -1,9 +1,11 @@
 # Satoshi.CV
 
 Satoshi.CV is a website dedicated to providing verified and fact-based information about Satoshi Nakamoto, the pseudonymous creator of Bitcoin. 
-The identity of Satoshi has remained one of the biggest mysteries in the tech world, and this site aims to present all relevant facts, theories, and research on the subject.
+The identity of Satoshi has remained one of the biggest mysteries in the tech world, and this site aims to present all relevant facts and research a potential candidate. 
 
-## Contribution Guidelines
+The information provided on the website may be incomplete, and additional verified sources or contributions are very welcome!
+
+## Contribution
 
 We welcome pull requests that add verified, credible information about the identity of Satoshi Nakamoto. When contributing, please:
 - Include clear references from trusted sources (such as academic articles, reputable news outlets, or books).
