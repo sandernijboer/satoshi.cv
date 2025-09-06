@@ -85,7 +85,7 @@ function spinCSS() {
     reel.style.transform = 'translateY(0)';
     void reel.offsetWidth; // reset
     reel.style.transition = 'transform 8s cubic-bezier(0.25, 0.5, 0.5, 1)';
-    reel.style.transform = `translateY(-${(names.length - 1) * 1.72}em)`;
+    reel.style.transform = `translateY(-${(names.length - 1) * 1.81}em)`;
 
     setTimeout(() => {
       document.querySelectorAll('#papers li, #keyFacts li, #personal li, #study li, #quotes li, #work li, #honors li, #timeline li, h2, p').forEach((el) => {

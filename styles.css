@@ -102,10 +102,10 @@ sup a {
    Slot / Reel
 --------------------------------*/
 #slot {
-    width: 500px;
+    width: 100%;
     height: 1.5em;
     overflow: hidden;
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-weight: 650;
     text-align: center;
     margin: 40px auto 0;
