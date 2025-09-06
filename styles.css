@@ -138,6 +138,10 @@ blockquote {
 /* ------------------------------
    Ribbons
 --------------------------------*/
+.container {
+    position: relative;
+    overflow-x: hidden;
+}
 .ribbon {
     position: absolute;
     top: 42px;
