@@ -21,82 +21,82 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Mask names
   document.querySelectorAll('#papers li, #keyFacts li, #personal li, #study li, #work li, #quotes li, #honors li, #timeline li, h2, p').forEach((el) => {
-    el.innerHTML = el.innerHTML.replace(/__FULLNAME__/g, '░░░░░░░░░').replace(/__NAME__/g, '░░░░░░░');
+    el.innerHTML = el.innerHTML.replace(/__FULLNAME__/g, 'Addison Fischer').replace(/__NAME__/g, 'Fischer');
   });
 });
 
-const names = [
-  'Satoshi Nakamoto',
-  'Craig Wright',
-  'Hal Finney',
-  'Nick Szabo',
-  'Wei Dai',
-  'Adam Back',
-  'Dorian Nakamoto',
-  'Gavin Andresen',
-  'Jed McCaleb',
-  'Tim May',
-  'Craig Wright',
-  'Hal Finney',
-  'Nick Szabo',
-  'Wei Dai',
-  'Adam Back',
-  'Dorian Nakamoto',
-  'Gavin Andresen',
-  'Jed McCaleb',
-  'Tim May',
-  'David Chaum',
-  'Len Sassaman',
-  'Shinichi Mochizuki',
-  'Paul Le Roux',
-  'Vili Lehdonvirta',
-  'Neal King',
-  'Michael Clear',
-  'Martii Malmi',
-  'Ross Ulbricht',
-  'Bram Cohen',
-  'Elon Musk',
-  'Peter Todd',
-  ' ',
-  'Nick Szabo',
-  ' ',
-  'Wei Dai',
-  ' ',
-  'Dorian Nakamoto',
-  ' ',
-  'Gavin Andresen',
-  ' ',
-  'Adam Back',
-  ' ',
-  'Hal Finney',
-  ' ',
-  ' ',
-  'Addison Fischer',
-];
-
-const reel = document.getElementById('reel');
-names.forEach((name) => reel.insertAdjacentHTML('beforeend', `<div>${name}</div>`));
-
-function spinCSS() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-
-  setTimeout(() => {
-    reel.style.transition = 'none';
-    reel.style.transform = 'translateY(0)';
-    void reel.offsetWidth; // reset
-    reel.style.transition = 'transform 8s cubic-bezier(0.25, 0.5, 0.5, 1)';
-    reel.style.transform = `translateY(-${(names.length - 1) * 1.81}em)`;
-
-    setTimeout(() => {
-      document.querySelectorAll('#papers li, #keyFacts li, #personal li, #study li, #quotes li, #work li, #honors li, #timeline li, h2, p').forEach((el) => {
-        el.innerHTML = el.innerHTML.replace(/░░░░░░░░░/g, 'Addison Fischer').replace(/░░░░░░░/g, 'Fischer');
-      });
-
-      document.querySelectorAll('.masked').forEach((el) => el.classList.replace('masked', 'unmasked'));
-      document.getElementById('photo').src = 'unmasked.png';
-      document.getElementById('reveal').remove();
-    }, 8000);
-  }, 1000);
-}
-
-['reveal'].forEach((id) => document.getElementById(id).addEventListener('click', spinCSS));
+// const names = [
+//   'Satoshi Nakamoto',
+//   'Craig Wright',
+//   'Hal Finney',
+//   'Nick Szabo',
+//   'Wei Dai',
+//   'Adam Back',
+//   'Dorian Nakamoto',
+//   'Gavin Andresen',
+//   'Jed McCaleb',
+//   'Tim May',
+//   'Craig Wright',
+//   'Hal Finney',
+//   'Nick Szabo',
+//   'Wei Dai',
+//   'Adam Back',
+//   'Dorian Nakamoto',
+//   'Gavin Andresen',
+//   'Jed McCaleb',
+//   'Tim May',
+//   'David Chaum',
+//   'Len Sassaman',
+//   'Shinichi Mochizuki',
+//   'Paul Le Roux',
+//   'Vili Lehdonvirta',
+//   'Neal King',
+//   'Michael Clear',
+//   'Martii Malmi',
+//   'Ross Ulbricht',
+//   'Bram Cohen',
+//   'Elon Musk',
+//   'Peter Todd',
+//   ' ',
+//   'Nick Szabo',
+//   ' ',
+//   'Wei Dai',
+//   ' ',
+//   'Dorian Nakamoto',
+//   ' ',
+//   'Gavin Andresen',
+//   ' ',
+//   'Adam Back',
+//   ' ',
+//   'Hal Finney',
+//   ' ',
+//   ' ',
+//   'Addison Fischer',
+// ];
+//
+// const reel = document.getElementById('reel');
+// names.forEach((name) => reel.insertAdjacentHTML('beforeend', `<div>${name}</div>`));
+//
+// function spinCSS() {
+//   window.scrollTo({ top: 0, behavior: 'smooth' });
+//
+//   setTimeout(() => {
+//     reel.style.transition = 'none';
+//     reel.style.transform = 'translateY(0)';
+//     void reel.offsetWidth; // reset
+//     reel.style.transition = 'transform 8s cubic-bezier(0.25, 0.5, 0.5, 1)';
+//     reel.style.transform = `translateY(-${(names.length - 1) * 1.81}em)`;
+//
+//     setTimeout(() => {
+//       document.querySelectorAll('#papers li, #keyFacts li, #personal li, #study li, #quotes li, #work li, #honors li, #timeline li, h2, p').forEach((el) => {
+//         el.innerHTML = el.innerHTML.replace(/░░░░░░░░░/g, 'Addison Fischer').replace(/░░░░░░░/g, 'Fischer');
+//       });
+//
+//       document.querySelectorAll('.masked').forEach((el) => el.classList.replace('masked', 'unmasked'));
+//       document.getElementById('photo').src = 'unmasked.png';
+//       document.getElementById('reveal').remove();
+//     }, 8000);
+//   }, 1000);
+// }
+//
+// ['reveal'].forEach((id) => document.getElementById(id).addEventListener('click', spinCSS));
